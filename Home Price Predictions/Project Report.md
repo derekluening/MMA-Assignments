@@ -1,8 +1,8 @@
-Data Analysis  
+**Data Analysis  **
 
 Before I started cleaning and manipulating any data, I wanted to learn more about the dataset and understand how the variables influenced sales prices. To conduct this preliminary analysis, I leveraged Tableau. Given that there were a significant number of variables in the data set, Tableau provided me with a very efficient way to analyze a considerable number of variables. I began my analysis by thinking about the significant factors that influence house prices: Homestyle/layout, square footage, neighborhood, total bathrooms, total bedrooms, and overall quality of the home. My analysis of these variables confirmed my intuition on what would influence the final sale price. However, I also learned that some other variables played a crucial role in influencing the sales price. These variables included how many cars a garage can hold, garage area, and basement square footage. I had not initially considered these variables due to my own biases on what is essential in a home. However, investigating these variables during the first step of the process allowed me to understand what may be relevant to my model. Screenshots of my data analysis can be found below, and my dashboard can be found in my submitted zipped file.  
 
-Data Cleaning 
+**Data Cleaning **
 
 Once I understood which variables are correlated with the sales price, I began to investigate both the train and test sets for missing values and inconsistencies independently. However, before I began manipulating the dataset, I thoroughly reviewed the data dictionary. The data dictionary is very detailed and provided a firm understanding of what each variable is and the values that populated them. Examining the data dictionary allowed me to begin thinking about how the variables will interact with each other and what variables I may need to create for my model.  
 
@@ -16,7 +16,7 @@ After I cleaned the data of any missing values, I converted all my variables wit
 
  
 
-Feature Engineering and Combining Datasets 
+**Feature Engineering and Combining Datasets **
 
 To ensure that the feature engineering I conducted was captured in both the training and testing datasets, I combined them into one master dataset. While I believe that the initial dataset captures many variables considered when buying a home, I felt that three key variables were missing.  I created an additional three columns that captured the house's total square footage, the total number of bathrooms in the house and made a binary variable that identifies if a remodel took place or not.  
 
@@ -26,7 +26,7 @@ Similarly, this dataset does an excellent job of identifying the number of bathr
 
 Finally, I created a dummy variable that indicates if a remodel took place or not. There is no way to tell what was remodeled from the initial data set if a remodel occurred. However, while we cannot determine what happened, I still felt that it was essential to capture that one that took place. Depending on what the homeowner decided to update, it could add significant value to their home, as Professor. Ovchinnikov displayed in our first class, humans focus on visuals first. If your home is not updated, most people have a hard time looking past the dated kitchen and bathrooms and, as a result, are not likely to want to pay over asking for your home. Thus, I felt it was essential to not only understand what year a remodel may have occurred in but to identify if one happened or not. 
 
-Model 
+**Model **
 
 Once I had successfully organized and cleaned the data, I sought to build a simple model that could accurately predict housing prices. However, before I began modeling, I further researched factors that strongly influence house prices. The consistent variables that came back were square footage, total bathrooms, total bedrooms, neighborhood, and upgrades. With this information coupled with the information I had learned in my data analysis, I believed I had enough information to build a model.   
 
