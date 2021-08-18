@@ -1,21 +1,3 @@
-## MMA 860: Team Bremner: March-April 2021 Team Project: "The impact of socioeconomics on violence."
-
-#### 00 Project Background ####
-#   Why do people resort to violence?  
-#   Violence is a powerful and unpleasant tool. Typically, it’s caused by emotions such as anger or fear. Sometimes, violence can be practical or transactional, such as a gang dispute over territory or a hit on an important political figure. While it is normal for individuals to experience negative emotions, some respond with violence.  Why?
-#   
-# In this project, we will explore a few socioeconomic data sets that our team has identified as points of interest.
-#  1.	Median Household Income
-#  2.	Poverty Level
-#  3.	High-school graduation rate
-#  4.	Police Activity / Shootings
-#  5.	Ethnic background
-# 
-# In our socioeconomic modelling, we will use US datasets to explore how socioeconomics relates to violence. Using multiple regression using the points listed above to help predict gun violence in various American cities. The project will utilize techniques listed below:
-#   
-
-
-
 #### 00.1 Dependencies, working Directory & loading files #### 
 Packages <- c('tidyverse', 'mice', 'readxl', 'MASS','caret','ggplot2', 'tidyr', 'lubridate','lattice', 'car','estimatr','stringr')
 lapply(Packages, library, character.only = TRUE)
@@ -92,7 +74,7 @@ head(file1)
 summary(file1)
 str(file1)
 
-# 2. Remove useless and redounded columns 
+# 2. Remove useless and redundant columns 
 df <- subset(file1, select = -c(address,notes,participant_age,participant_name,city_and_state,state_id,latitude.y,longitude.y))
 str(df)
 
